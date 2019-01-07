@@ -6,4 +6,9 @@ public class FirstNameExtractor {
         return fullName;
     }
 
+
+    public static String extractFirstNameWithTrim(String fullName) {
+        return fullName.trim();
+    }
+
 }
