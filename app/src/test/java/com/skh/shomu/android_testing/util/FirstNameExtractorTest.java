@@ -31,7 +31,7 @@ public class FirstNameExtractorTest {
 
     @Test
     public void extractFirstName_DifferentString_ReturnEmptyString() {
-      //  assertThat(extractFirstName("Samiran"), is(FULL_NAME_DEMO));
+        //  assertThat(extractFirstName("Samiran"), is(FULL_NAME_DEMO));
         assertThat(extractFirstName("Samiran Kumar"), is(FULL_NAME_DEMO));
 
     }
@@ -39,14 +39,12 @@ public class FirstNameExtractorTest {
 
     @Test
     public void extractFirstName_WithSpaceDifferentString_ReturnEmptyString() {
-      /*
         assertThat(extractFirstName("Samiran "), is(FULL_NAME_DEMO));
         assertThat(extractFirstName(" Samiran"), is(FULL_NAME_DEMO));
         assertThat(extractFirstName(" Samiran "), is(FULL_NAME_DEMO));
         assertThat(extractFirstName("Samiran  Kumar"), is(FULL_NAME_DEMO));
         assertThat(extractFirstName(" Samiran  Kumar"), is(FULL_NAME_DEMO));
         assertThat(extractFirstName(" Samiran  Kumar "), is(FULL_NAME_DEMO));
-*/
     }
 
 
@@ -56,19 +54,15 @@ public class FirstNameExtractorTest {
     }
 
 
-
-
-
-
     @Test
     public void extractFirstNameWithTrim_WithSpaceDifferentString_ReturnEmptyString() {
-      //  assertThat(extractFirstNameWithTrim("Samiran "), is(FULL_NAME_DEMO));
-      //  assertThat(extractFirstNameWithTrim(" Samiran"), is(FULL_NAME_DEMO));
-     //   assertThat(extractFirstNameWithTrim(" Samiran "), is(FULL_NAME_DEMO));
+        //  assertThat(extractFirstNameWithTrim("Samiran "), is(FULL_NAME_DEMO));
+        //  assertThat(extractFirstNameWithTrim(" Samiran"), is(FULL_NAME_DEMO));
+        //   assertThat(extractFirstNameWithTrim(" Samiran "), is(FULL_NAME_DEMO));
         assertThat(extractFirstNameWithTrim("Samiran Kumar   "), is(FULL_NAME_DEMO));
         assertThat(extractFirstNameWithTrim("  Samiran Kumar   "), is(FULL_NAME_DEMO));
-       // assertThat(extractFirstNameWithTrim(" Samiran  Kumar"), is(FULL_NAME_DEMO));
-      //  assertThat(extractFirstNameWithTrim(" Samiran  Kumar "), is(FULL_NAME_DEMO));
+        // assertThat(extractFirstNameWithTrim(" Samiran  Kumar"), is(FULL_NAME_DEMO));
+        //  assertThat(extractFirstNameWithTrim(" Samiran  Kumar "), is(FULL_NAME_DEMO));
 
     }
 
